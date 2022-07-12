@@ -21,6 +21,7 @@ export class Singleton {
       id: process.env.ID,
       email: process.env.EMAIL,
       private: process.env.PRIVATE,
+      age: process.env.AGE,
     };
 
     this.que = [];
@@ -41,10 +42,13 @@ export class Singleton {
     try {
       if (this.identifying.id.length > 2) {
         console.log('The ID is length is confirmed');
-      } if (!this.identifying.private) {
+        if (!this.identifying.private) {
         console.log('The password is not exist');
-        this.que.push(this.identifying.id);
-      }
+        // 빈 반환
+        return;
+        } else {this.que.push(this.identifying.id); }
+      } else {console.log('It\'s invalide ID')};
+      
       return this.que;
 
     } catch (error) {

@@ -1,10 +1,11 @@
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      PORT: string;
+      PORT: number;
       ID: string;
       EMAIL: string;
       PRIVATE: string;
+      AGE: number;
     }
   }
 }
