@@ -1,0 +1,20 @@
+{
+  "name": "jsprac",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=devDependencies nodemon ts-node ./playbook/play.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "dotenv": "^16.0.1",
+    "koa": "^2.13.4",
+    "koa-router": "^11.0.1",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  }
+}
